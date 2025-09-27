@@ -1,0 +1,37 @@
+{
+  "name": "shop-documentation",
+  "version": "1.0.0",
+  "description": "Documentation site for shop policies and terms",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 8000 -o",
+    "build": "echo 'No build step required for static HTML'",
+    "validate": "html-validate *.html",
+    "test": "echo 'No tests configured'",
+    "deploy": "echo 'Deployment handled by GitHub Actions'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/your-repository-name.git"
+  },
+  "keywords": [
+    "documentation",
+    "shop",
+    "terms",
+    "conditions",
+    "github-pages"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/your-username/your-repository-name/issues"
+  },
+  "homepage": "https://your-username.github.io/your-repository-name",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "html-validate": "^8.7.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

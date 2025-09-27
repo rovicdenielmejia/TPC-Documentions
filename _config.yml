@@ -1,0 +1,54 @@
+# GitHub Pages Configuration
+# This file configures GitHub Pages for your documentation site
+
+# Site settings
+title: "Shop Documentation"
+description: "Documentation and terms for the shop loyalty program"
+baseurl: "" # Leave empty for root domain
+url: "" # Your GitHub Pages URL will be: https://username.github.io/repository-name
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Terms & Conditions"
+    url: "/Terms%20&%20Condition.html"
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .github
+
+# Include files
+include:
+  - _redirects
+  - .htaccess
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "default"
