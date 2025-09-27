@@ -1,6 +1,9 @@
 # Netlify-style redirects for GitHub Pages
 # Format: from    to    status
 
+# Redirect root to main terms page
+/    /Terms%20&%20Condition.html    301
+
 # Redirect old paths to new ones
 /terms    /Terms%20&%20Condition.html    301
 /terms.html    /Terms%20&%20Condition.html    301
@@ -8,6 +11,3 @@
 # Handle common typos
 /terms-and-conditions    /Terms%20&%20Condition.html    301
 /terms-conditions    /Terms%20&%20Condition.html    301
-
-# API redirects (if you add API documentation later)
-/api/*    /api/:splat    200
